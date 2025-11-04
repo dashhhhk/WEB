@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GPT-4</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <div class="page">
+  
       <section class="section header">
         <div class="header__logo">
           <a href="#" class="logo__link">
-            <img class="link__name" src="./assets/img/logo.svg" />
+            <img class="link__name" src="./assets/img/logo.svg" alt="GPT-4" />
           </a>
         </div>
-        <div class="header__burger_menu">
+        <div class="header__burger_menu" id="burgerMenu">
           <div class="burger_menu__line"></div>
           <div class="burger_menu__line"></div>
           <div class="burger_menu__line"></div>
         </div>
-        <div class="header__right hidden">
+        <div class="header__right" id="headerRight">
           <aside class="header__menu">
-            <div class="menu__close">
+            <div class="menu__close" id="menuClose">
               <div class="menu__line"></div>
               <div class="menu__line"></div>
             </div>
@@ -50,9 +47,7 @@
             </ul>
           </aside>
           <div class="cta_buttons">
-            <a href="#"
-              ><button class="cta_buttons__singin btn">Войти</button></a
-            >
+            <a href="#"><button class="cta_buttons__singin btn">Войти</button></a>
             <a href="#"
               ><button class="cta_buttons__singin btn primary-btn">
                 Регистрация
@@ -61,6 +56,8 @@
           </div>
         </div>
       </section>
+
+    
       <section class="section hero_section">
         <div class="hero_section__left">
           <h1 class="left__header">
@@ -72,42 +69,29 @@
             изменение бурной привязанности. Вечеринку мы лет на заказ разрешили.
           </p>
           <div class="left__cta_buttons">
-            <input type="text" value="" placeholder="Введите Email" />
+            <input type="text" placeholder="Введите Email" />
             <button class="cta_buttons__signin btn primary-btn">Начать</button>
           </div>
-          <div class="left__social_approve"></div>
+          <div class="left__social_approve">
+            <img src="./assets/img/people.png" alt="People" />
+            <p>1,600 человек запросило доступ за последние 24 часа</p>
+          </div>
         </div>
         <div class="hero_section__right">
-          <img src="./assets/img/Illustration.svg" alt="gpt3" />
+          <img src="./assets/img/Illustration.svg" alt="GPT-4 Illustration" />
         </div>
       </section>
+
+    
       <section class="section brands_section">
-        <img
-          class="brands_section__img"
-          src="./assets/img/brands/google.svg"
-          alt="google"
-        />
-        <img
-          class="brands_section__img"
-          src="./assets/img/brands/slack.svg"
-          alt="slack"
-        />
-        <img
-          class="brands_section__img"
-          src="./assets/img/brands/atlassian.svg"
-          alt="atlassian"
-        />
-        <img
-          class="brands_section__img"
-          src="./assets/img/brands/dropbox.svg"
-          alt="dropbox"
-        />
-        <img
-          class="brands_section__img"
-          src="./assets/img/brands/shopify.svg"
-          alt="shopify"
-        />
+        <img class="brands_section__img" src="./assets/img/brands/google.svg" alt="google" />
+        <img class="brands_section__img" src="./assets/img/brands/slack.svg" alt="slack" />
+        <img class="brands_section__img" src="./assets/img/brands/atlassian.svg" alt="atlassian" />
+        <img class="brands_section__img" src="./assets/img/brands/dropbox.svg" alt="dropbox" />
+        <img class="brands_section__img" src="./assets/img/brands/shopify.svg" alt="shopify" />
       </section>
+
+     
       <section class="section what_is_chatgpt_section">
         <div class="what_is_chatgpt_section__top">
           <h3 class="top__header lined_header">Что такое GPT&#8209;4</h3>
@@ -149,11 +133,12 @@
           </div>
         </div>
       </section>
+
+      
       <section class="section future_here">
         <div class="future_here__left">
           <h2 class="left__header">
-            Будущее Уже Наступило и Тебе Нужно Лишь Осознать. Шагни в Будущее и
-            Воплоти Его.
+            Будущее Уже Наступило и Тебе Нужно Лишь Осознать. Шагни в Будущее и Воплоти Его.
           </h2>
           <a href="#" class="left__cta">Запросить ранний доступ</a>
         </div>
@@ -199,7 +184,144 @@
           </div>
         </div>
       </section>
+
+      
+      <section class="section my_apps">
+        <div class="my_apps__image">
+          <img src="./assets/img/Feature Image.svg" alt="Feature" />
+        </div>
+        <div class="my_apps__wrapper">
+          <p class="my_apps__text-1">Запросить ранний доступ</p>
+          <p class="my_apps__title">Превосходя все<br>ожидания</p>
+          <p class="my_apps__text-2">
+            Однако кровать для помощи в путешествии неприятна. Не мысли все 
+            осуществляют благословение. Снисхождение ко всему, радость, 
+            изменение бурной привязанности. Вечеринку мы лет на заказ разрешили.
+          </p>
+          <p class="my_apps__desc">Запросить ранний доступ</p>
+        </div>
+      </section>
+
+      
+      <section class="section cta_section">
+        <div class="cta__background">
+          <p class="cta__text-1">Запросите ранний доступ</p>
+          <p class="cta__text-2">Зарегистрируйтесь и начните исследовать<br>безграничные возможности.</p>
+          <div class="cta__button">
+            <button class="cta__start">Начать</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section class="section blog_section">
+        <div class="blog__header">
+          <h2>Многое Происходит,<br>Мы Ведем об Этом Блог.</h2>
+        </div>
+        <div class="blog__grid">
+          <div class="blog__card main-card">
+            <img src="./assets/img/RectangleB.svg" alt="Blog post" class="main-card__img" />
+            <div class="main-card__content">
+              <div class="main-card__text-container"> 
+                <p class="main-card__blog-date">Сентябрь 26, 2021</p>
+                <p class="main-card__blog-title">GPT-4 и Openai – это будущее. Давайте разберемся, как это?</p>
+                <a href="#!" class="blog__read-more">Читать полную статью</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img src="./assets/img/Rectangle1.svg" alt="Blog post" />
+            <div class="blog__content">
+              <div class="blog__text-container"> 
+                <p class="blog__date">Сентябрь 26, 2021</p>
+                <p class="blog__title">GPT-4 и Openai – это будущее. Давайте разберемся, как это?</p>
+                <a href="#!" class="blog__read-more">Читать полную статью</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img src="./assets/img/Rectangle2.svg" alt="Blog post" />
+            <div class="blog__content">
+              <div class="blog__text-container"> 
+                <p class="blog__date">Сентябрь 26, 2021</p>
+                <p class="blog__title">GPT-4 и Openai – это будущее. Давайте разберемся, как это?</p>
+                <a href="#!" class="blog__read-more">Читать полную статью</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img src="./assets/img/Rectangle3.svg" alt="Blog post" />
+            <div class="blog__content">
+              <div class="blog__text-container"> 
+                <p class="blog__date">Сентябрь 26, 2021</p>
+                <p class="blog__title">GPT-4 и Openai – это будущее. Давайте разберемся, как это?</p>
+                <a href="#!" class="blog__read-more">Читать полную статью</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img src="./assets/img/Rectangle4.svg" alt="Blog post" />
+            <div class="blog__content">
+              <div class="blog__text-container"> 
+                <p class="blog__date">Сентябрь 26, 2021</p>
+                <p class="blog__title">GPT-4 и Openai – это будущее. Давайте разберемся, как это?</p>
+                <a href="#!" class="blog__read-more">Читать полную статью</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+      <section class="section future_section">
+        <div class="future__content">
+          <h2 class="future__title">Хотите Шагнуть в Будущее Раньше Других?</h2>
+          <a href="#!" class="future__button">Запросить ранний доступ</a>
+          <div class="future__information">
+            <div class="footer__column">
+              <img src="./assets/img/GPT-3.svg" alt="GPT-4 Logo" class="future__img" />
+              <p class="light-text">ул. Профессора Поздеева, 13, к.Г,<br>
+                Пермь, Пермский край, 614013 <br><br>
+                Все права защищены</p>
+            </div>
+
+            <div class="footer__columns">
+              <div class="footer__column-link">
+                <h3>Ссылки</h3>
+                <a href="#">Оверсен</a>
+                <a href="#">Соц. сети</a>
+                <a href="#">Счетчики</a>
+                <a href="#">Контакты</a>
+              </div>
+              
+              <div class="footer__column-link">
+                <h3>Компания</h3>
+                <a href="#">Условия использования</a>
+                <a href="#">Перс. данные</a>
+                <a href="#">Контакты</a>
+              </div>
+              
+              <div class="footer__column-link">
+                <h3>Контакты</h3>
+                <a href="#">ул. Профессора <br> Поздеева, 13, к.Г, Пермь</a>
+                <a href="#">+7 (342) 2-198-520</a>
+                <a href="#">info@pstu.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+
+    <footer class="footer">
+      <p class="footer__text">© 2023 GPT-4. Все права защищены.</p>
+    </footer>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

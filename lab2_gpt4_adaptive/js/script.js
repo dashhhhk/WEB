@@ -84,3 +84,55 @@ window.onload = () => {
   // вешаем прослушку на клик по кнопке "Закрыть меню"
   closeMenuNode.addEventListener("click", handleCloseMenu);
 };
+// Дополнения для крестика закрытия меню
+
+// Создаем и добавляем крестик в меню
+function addCloseButtonToMenu() {
+    const headerMenuNode = document.querySelector(".header__right");
+    const existingCloseBtn = document.querySelector(".mobile-close-btn");
+    
+    // Если крестик уже есть, не добавляем повторно
+    if (existingCloseBtn) return;
+    
+    // Создаем элемент крестика
+    const closeButton = document.createElement("div");
+    closeButton.className = "mobile-close-btn";
+    closeButton.innerHTML = `
+        <div class="mobile-close-btn__line"></div>
+        <div class="mobile-close-btn__line"></div>
+    `;
+    
+    // Добавляем крестик в начало меню
+    if (headerMenuNode) {
+        headerMenuNode.insertBefore(closeButton, headerMenuNode.firstChild);
+        
+        // Вешаем обработчик клика на крестик
+        closeButton.addEventListener("click", function(e) {
+            e.stopPropagation(); // Предотвращаем всплытие события
+            
+            const headerMenuNode = document.querySelector(".header__right");
+            const bodyNode = document.querySelector("body");
+            const burgerNode = document.querySelector(".header__burger_menu");
+            
+            if (headerMenuNode && !headerMenuNode.classList.contains("hidden")) {
+                headerMenuNode.classList.add("hidden");
+                bodyNode.classList.remove("oh");
+                
+                // Показываем бургер-меню обратно
+                if (burgerNode) {
+                    burgerNode.classList.remove("hidden");
+                }
+            }
+        });
+    }
+}
+
+// Инициализируем крестик после загрузки DOM
+window.addEventListener('load', function() {
+    addCloseButtonToMenu();
+});
+
+// Также инициализируем при ресайзе (на случай динамической загрузки)
+window.addEventListener('resize', function() {
+    setTimeout(addCloseButtonToMenu, 100);
+});
